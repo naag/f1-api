@@ -9,7 +9,7 @@ import (
 	"github.com/naag/f1-api/pkg/api"
 )
 
-func Client(pluginPath string) (*plugin.Client, api.ScenarioPluginInterface, error) {
+func NewClient(pluginPath string) (*plugin.Client, api.ScenarioPluginInterface, error) {
 	logger := hclog.New(&hclog.LoggerOptions{
 		Name:   "plugin",
 		Output: os.Stdout,

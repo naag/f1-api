@@ -19,7 +19,7 @@ type scenario struct {
 	t          *api.T
 }
 
-func New() *ScenarioPlugin {
+func NewServer() *ScenarioPlugin {
 	p := &ScenarioPlugin{}
 	p.scenarios = make(map[string]*scenario)
 	return p
